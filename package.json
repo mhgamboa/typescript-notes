@@ -1,0 +1,26 @@
+{
+  "name": "typescript-notes",
+  "version": "1.0.0",
+  "description": "This is where I'm learning typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc index",
+    "watch": "tsc --watch index",
+    "config": "tsc --init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhgamboa/typescript-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhgamboa/typescript-notes/issues"
+  },
+  "homepage": "https://github.com/mhgamboa/typescript-notes#readme",
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
+}
