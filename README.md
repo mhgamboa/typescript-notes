@@ -14,14 +14,26 @@ Learning with [Traversy Media](https://www.youtube.com/watch?v=BCg4U1FzODs).
 
 Javascript (JS) vs Typescript (TS):
 
-- `let id = 5` vs `let id: number = 5` (although typescript will infer the type if I don't explicitly state it).
+- `let id = 5` vs `let id: number = 5`
   - setting `id = "6"` will give an error in TS, but not in JS
+- **You set types by stating the type upon declaration**
+  - typescript will infer the type if I don't explicitly state it
+- set an array of items using brackets `[]` with declaration. Example:
+  - `let numberArray = number[] = [1,2,3,4]`
+- A **Tuple** data type is an array where you explicitly **state the data types for each item at each index**. Example:
+  - `let person : [number, string, boolean] = [1, "2", false]`
+  - A tuple defined with brackets `let person : [number, string, boolean][] = [1, "2", false]`, is an array of arrays where the subarrays are the defined tuples
+- Unions allow data points to be two different types. Example:
+  - `let id: string | number = 22`
 
 ## Compiling
 
 - `tsc index` compiles index
-- `"watch": "tsc --watch index"` will watch your file and report errors
+- `"watch": "tsc --watch index"` will watch your file and report errors (or tsc --watch if config file has been edited)
 
 ## tsconfig.json
 
 - run `tsc --init`
+- `"outDir": "./dist",` Specifies an output folder for all emitted files
+- `"rootDir": "./src",` Specifies the root folder within your source files
+-

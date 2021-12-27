@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc index",
-    "watch": "tsc --watch index",
+    "tsc": "tsc",
+    "watch": "tsc --watch",
     "config": "tsc --init"
   },
   "repository": {
